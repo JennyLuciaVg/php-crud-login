@@ -28,7 +28,7 @@ class MainController extends Controller
   public function logout()
   {
     $this->session->close();
-    header('location: /php-mvc/login');
+    header('location: /tuto-login/login');
   }
 
 }
