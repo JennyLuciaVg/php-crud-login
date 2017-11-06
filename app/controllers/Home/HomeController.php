@@ -7,17 +7,17 @@ require_once ROOT . '/tuto-login/app/models/Home/HomeModel.php';
 class HomeController extends Controller
 {
   /**
-   * string 
+   * string
    */
   public $nombre;
 
   /**
-   * object 
+   * object
    */
   public $model;
 
   /**
-   * Inicializa valores 
+   * Inicializa valores
    */
   public function __construct()
   {
@@ -39,7 +39,7 @@ class HomeController extends Controller
   public function show()
   {
     $params = array('nombre' => $this->nombre);
-    $this->render(__CLASS__, $params); 
+    $this->render(__CLASS__, $params);
   }
 
   /**

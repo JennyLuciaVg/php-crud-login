@@ -1,7 +1,7 @@
 <h1 class="page-header">Alumnos</h1>
 
 <div class="well well-sm text-right">
-    <a class="btn btn-primary" href="?c=Alumno&a=Crud">Nuevo alumno</a>
+    <a class="btn btn-primary" href="<?php echo FOLDER_PATH; ?>/Alumno/Crud">Nuevo alumno</a>
 </div>
 
 <table class="table table-striped">
@@ -25,12 +25,12 @@
             <td><?php echo $r->Sexo == 1 ? 'Hombre' : 'Mujer'; ?></td>
             <td><?php echo $r->FechaNacimiento; ?></td>
             <td>
-                <a href="?c=Alumno&a=Crud&id=<?php echo $r->id; ?>">Editar</a>
+                <a href="<?php echo FOLDER_PATH; ?>/Alumno/Crud/params?id=<?php echo $r->id; ?>">Editar</a>
             </td>
             <td>
-                <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=Alumno&a=Eliminar&id=<?php echo $r->id; ?>">Eliminar</a>
+                <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="<?php echo FOLDER_PATH; ?>/Alumno/Eliminar/params?id=<?php echo $r->id; ?>">Eliminar</a>
             </td>
         </tr>
     <?php endforeach; ?>
     </tbody>
-</table> 
+</table>

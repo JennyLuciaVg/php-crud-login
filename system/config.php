@@ -30,7 +30,7 @@ define('LIBS_ROUTE', ROOT . FOLDER_PATH . '/system/libs/');
 /////////////////////////////////////
 
 define('CORE', 'system/core/');
-define('DEFAULT_CONTROLLER', 'Home');
+define('DEFAULT_CONTROLLER', 'Main');
 
 //////////////////////////////////////
 // Valores de base de datos

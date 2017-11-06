@@ -23,6 +23,7 @@ class MainController extends Controller
   {
     $params = array('email' => $this->session->get('email'));
     $this->render(__CLASS__, $params);
+
   }
 
   public function logout()

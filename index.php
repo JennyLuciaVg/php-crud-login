@@ -20,7 +20,7 @@ $method = $router->getMethod();
 $param = $router->getParam();
 
 /**
- * Validaciones e inclusión del controlador y el metodo 
+ * Validaciones e inclusión del controlador y el metodo
  */
 if(!CoreHelper::validateController($controller))
   $controller = 'ErrorPage';
